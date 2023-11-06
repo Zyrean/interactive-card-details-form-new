@@ -2,31 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h3 {
-    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
-  }
-  h5 {
-    @apply mb-2 text-xl font-bold text-darkGrayishBlue;
-  }
-  p,
-  a {
-    @apply text-grayishBlue;
-  }
+#img-background {
+  background-image: url("../assets/images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.section-container {
-  @apply max-w-6xl mx-auto text-center px-10;
-}
-
-body {
-  background-image: url("../images/bg-header-desktop.png");
+#img-card-back {
+  background-image: url("../assets/images/bg-card-back.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-@media (max-width: 576px) {
-  body {
-    background-image: url("../images/bg-header-mobile.png");
+#img-card-front {
+  background-image: url("../assets/images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  #img-background {
+    background-image: url("../assets/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
